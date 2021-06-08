@@ -1,0 +1,23 @@
+CREATE TABLE `cars` (
+`CarName` varchar(100) DEFAULT NULL,
+`CarID` varchar(100) NOT NULL,
+`PayPerDay` varchar(100) NOT NULL,
+`Engine` varchar(100) NOT NULL,
+`Gearbox` varchar(100) NOT NULL,
+`Rented` varchar(100) NOT NULL,
+PRIMARY KEY (`CarID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+
+CREATE TABLE `renters` (
+`FullName` varchar(100) DEFAULT NULL,
+`CNID` varchar(100) DEFAULT NULL,
+`UserID` varchar(100) DEFAULT NULL,
+`Adress` varchar(100) NOT NULL,
+PRIMARY KEY (`UseID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
